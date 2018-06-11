@@ -14,3 +14,7 @@ img {
     width: fixed;
     height: fixed;
 }
+
+.icons{
+display:inline-block;
+}
