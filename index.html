@@ -2,195 +2,320 @@
 <html lang="en">
 
   <head>
-  
-	<link rel='icon' href='img/favico.png' />
-  
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Aaron Smit portfolio</title>
+    <title>Aaron Smit</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
     <!-- Custom styles for this template -->
-    <link href="css/1-col-portfolio.css" rel="stylesheet">
+    <link href="css/resume.min.css" rel="stylesheet">
+	
+	<style>
+.collapsible {
+    color: EAE7DC;
+    cursor: pointer;
+    padding: 18px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+	background-color: #E98074;
+}
+
+.active, .collapsible:hover {
+    
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+	color: #333541;
+    background-color: #EAE7DC;
+}
+</style>
 
   </head>
 
-  <body>
-    <!-- Navigation -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Aaron Smit</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+          <h1 class="mb-0">Aaron
+            <span class="text-primary">Smit</span>
+          </h1>
+          <div class="subheading mb-5">Melbourne, Vic·  ·
+            <a href="mailto:smitaaron1@gmail.com">smitaaron1@gmail.com</a>
+          </div>
+          <p class="mb-5">Hey there, this is my portfolio where you can see what projects I have worked on. I am a programmer based in Melbourne, but originally from South Africa. I moved to Australia in my pursuit of becoming a professional game programmer and am loving my new home. I enjoy bike rides on the weekends which has been a great way to explore the Melbourne area as well as get away from the computer. I'm quiet yet highly passionate and enthusiastic about my field and am always pushing myself to improve and expand my skills.</p>
+          <ul class="list-inline list-social-icons mb-0">
+            <li class="list-inline-item">
+              <a href="https://twitter.com/AaronDsmit" target = "_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            <li class="list-inline-item">
+              <a href="https://github.com/AaronDSmit" target = "_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
-	
-    <!-- Page Content -->
-    <div id="page-top" class="container content-section">
+      </section>
 
-	<!-- about me -->
-      <div class="row ">
-        <div class="container" align="justify">
-            <center><h2>Who is Aaron, an About Me</h2></center>
-			<p>Hey there, this is my portfolio where you can see what projects I have worked on. I am a programmer based in Melbourne, but originally from South Africa. I moved to Australia in my pursuit of becoming a professional game programmer and am loving my new home. I enjoy bike rides on the weekends which has been a great way to explore the Melbourne area as well as get away from the computer. I'm quiet yet highly passionate and enthusiastic about my field and am always pushing myself to improve and expand my skills.
-			<br><br>I primarily program in C++ and C# with a focus on game developement as well as other topics which interest me such as procedural generation and template meta programming (yikes). I am always working on a personal project exploring new ideas or consolidating newer skills.</p>
-		 </div>
-      </div>
-      <!-- /.row  -->
-	
-      <!-- Page Heading -->
-      <center><h1 id="projects" class="my-4">Major Projects </h1></center>
-	  
-      <!-- Project One -->
-      <div class="row ">
-        <div class="col-md-7">
-          <a href="#">
-            <img class="img-fluid" src="img/PlunderSail.PNG" alt="">
-          </a>
-		  
-		  <!--  <iframe src="https://www.youtube.com/embed/lMECrY1VrN8" width="640" height="350" frameborder="0" allowfullscreen> </iframe> -->
-		  
-        </div>
-        <div class="col-md-5">
-          <h3>Plunder Sail</h3>
-          <h6>Engine: Unity <br/> Language: C#</h6>
-		  <p>This was my major game project for 2017 which was made in six weeks.</p>
-          <a class="btn btn-primary" href="PlunderSail.html">More Info</a>
-        </div>
-      </div>
-      <!-- /.row -->
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+        <div class="my-auto">
+          <h2 class="mb-5">Portfolio</h2>
 
-      <hr>
-
-      <!-- Project Two -->
-      <div class="row">
-        <div class="col-md-7">
-          <a href="#">
-            <img class="img-fluid" src="img/PhysicsEngine.PNG" alt="">
-          </a>
-        </div>
-        <div class="col-md-5">
-          <h3>Physics Engine</h3>
-          <h6>Framework: AIE bootstrap <br/> Language: C++</h6>
-		  <p>A physics engine built to simulate 2D physics using industry standard techniques.</p>
-          <a class="btn btn-primary" href="#">More Info</a>
-        </div>
-      </div>
-      <!-- /.row -->
-
-      <hr>
-	  
-      <!-- Project Three -->
-      <div class="row">
-        <div class="col-md-7">
-          <a href="#">
-           <img class="img-fluid" src="img/NeuralNetwork.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-5">
-          <h3>Neuroevolution</h3>
-          <h6>Framework: AIE bootstrap <br/> Language: C++</h6>
-          <p>A demo simulation showcasing my modular neural network and genetic algorithm libraries.</p>
-          <a class="btn btn-primary" href="#">More Info</a>
-        </div>
-      </div>
-      <!-- /.row -->
-
-      <hr>
-	  
-		<center><h1 id="projects" class="my-4">Personal projects</h1></center>
-      <!-- Project Four -->
-      <div class="row">
-
-        <div class="col-md-7">
-           <a href="#">
-            <img class="img-fluid" src="img/Trader.PNG" alt="">
-          </a>
-        </div>
-        <div class="col-md-5">
-          <h3>Jetpack Trader</h3>
-		  <h6>Engine: Unity <br/> Language: C#</h6>
-          <p>A mobile game made in two and a half days for a game jam in a team of seven.</p>
-          <a class="btn btn-primary" href="#">More Info</a>
-        </div>
-      </div>
-      <!-- /.row -->
-	  
-      <hr>
-
-	  <!-- Project Four -->
-      <div class="row">
-        <div class="col-md-7">
-           <a href="#">
-           <img class="img-fluid" src="img/procgen.PNG" alt="">
-          </a>
-        </div>
-        <div class="col-md-5">
-          <h3>Procedural Generation</h3>
-		  <h6>Engine: Unity <br/> Language: C# <br/> in developement</h6>
-          <p>A hex based procedurally generated map using cellular automata.</p>
-          <a class="btn btn-primary" href="#">More Info</a>
-        </div>
-      </div>
-      <!-- /.row -->
-	  
-	  <hr>
-	  
-      <section id="contact" class="text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Contact Me</h2>
-            <ul class="list-inline banner-social-buttons">
-              <li class="list-inline-item">
-                <a href="https://twitter.com/AaronDsmit" class="btn btn-default btn-lg" target = "_blank"> 
-                  <i class="fa fa-twitter fa-fw"></i>
-                  <span class="network-name">Twitter</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://github.com/AaronDSmit" class="btn btn-default btn-lg" target = "_blank">
-                  <i class="fa fa-github fa-fw"></i>
-                  <span class="network-name">Github</span>
-                </a>
-              </li>
-            </ul>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+			  <img width="600" height="500" class="img-fluid" src="img/PlunderSail.PNG" alt="">
+              <h3 class="mb-0"><br>PlunderSail</h3>
+              <div class="subheading mb-3">Engine: Unity<br>Language: C#</div>
+              <p>This was my major game project for 2017 made in six weeks by a team of five people.</p>
+			  <button class="collapsible">More Info</button>
+			  <div class="content">
+			    <br>
+			    <iframe src="https://www.youtube.com/embed/lMECrY1VrN8" width="640" height="350" frameborder="0" allowfullscreen> </iframe>
+			 
+			 <br>
+			 <br>
+			 
+			 <p>This was my major games project for 2017 in which our team had six weeks to work through alpha, beta and gold. PlunderSail is a 3rd Person Pirate-ship game with a focus on constructing your ship almost any 
+			 way you want with the goal of crossing each pirate island off your map. Our team consisted of five members, two designers, two artists and myself as the sole programmer. As the only programmer I was responsible
+			 for planning, prototyping and implementing all game features, an important part of this was communicating with the two designers to ensure the project was on track time-wise and that features worked as expected.
+			 
+			 <br>
+			 <br>
+			 
+			 The main challenge I faced during this project was being responsible for <u>everything</u> code related. My time management skills were put to the test as I had to plan out my time to research, prototype, implement features and bug fix. 
+			 My daily tasks included stand up meetings to stay up-to-date with the team, source control management and regular discussions with the designers on how features would work.
+			 
+			 <br><br>
+			 The features I implemented are as follows:
+			 <br> - A grid based building system around the ship which allowed players to place different parts within a ruleset.
+			 <br> - Configurable AI that allowed the designers to create several behaviours such as passive merchants who would flee or typical enemies.
+			 <br> - UI transitions and controller compatible  menu.
+			 <br> - ship and camera controls.
+			 <br> - object pooling and other optimisation systems.
+			 <br> - combat systems such as cannons and dropping mines.</p>
+			  </div>
+            </div>
           </div>
+		  
+		  <hr>
+		  
+		  <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <img width="600" height="500" class="img-fluid" src="img/PhysicsEngine.PNG" alt="">
+              <h3 class="mb-0"><br>2D Physics Engine</h3>
+              <div class="subheading mb-3">FrameWork: AIE BOOTSTRAP<br>Language: C++</div>
+              <p>A physics engine built to simulate 2D physics using industry standard techniques.</p>
+			  <button class="collapsible">More Info</button>
+			  <div class="content">
+			    <p>Lorem ipsum...</p>
+			  </div>
+            </div>
+          </div>
+		  
+		  <hr>
+		  
+		  <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+			  <img width="600" height="500" class="img-fluid" src="img/NeuralNetwork.png" alt="">
+              <h3 class="mb-0"><br>NEUROEVOLUTION</h3>
+              <div class="subheading mb-3">FrameWork: AIE BOOTSTRAP<br>Language: C++</div>
+              <p>A demo simulation showcasing my modular neural network and genetic algorithm libraries.</p>
+			  <button class="collapsible">More Info</button>
+			  <div class="content">
+			    <p>Lorem ipsum...</p>
+			  </div>
+            </div>
+          </div>
+
         </div>
-      </div>
-    </section>
 
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+        <div class="my-auto">
+          <h2 class="mb-5">Education</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">University of Colorado Boulder</h3>
+              <div class="subheading mb-3">Bachelor of Science</div>
+              <div>Computer Science - Web Development Track</div>
+              <p>GPA: 3.23</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">August 2006 - May 2010</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">James Buchanan High School</h3>
+              <div class="subheading mb-3">Technology Magnet Program</div>
+              <p>GPA: 3.56</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">August 2002 - May 2006</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+        <div class="my-auto">
+          <h2 class="mb-5">Skills</h2>
+
+          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+          <ul class="list-inline list-icons">
+            <li class="list-inline-item">
+              <i class="devicons devicons-html5"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-css3"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-javascript"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-jquery"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-sass"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-less"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-bootstrap"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-wordpress"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-grunt"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-gulp"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-npm"></i>
+            </li>
+          </ul>
+
+          <div class="subheading mb-3">Workflow</div>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Mobile-First, Responsive Design</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Cross Browser Testing &amp; Debugging</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Cross Functional Teams</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Agile Development &amp; Scrum</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+        <div class="my-auto">
+          <h2 class="mb-5">Interests</h2>
+          <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skiier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
+          <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technolgy advancements in the front-end web development world.</p>
+        </div>
+      </section>
     </div>
-    <!-- /.container -->
 
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; AaronDSmit.github.io 2018</p>
-      </div>
-      <!-- /.container -->
-    </footer>
+	<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+	
+	
+	
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
 
   </body>
 
