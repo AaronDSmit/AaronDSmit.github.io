@@ -88,7 +88,7 @@
           <div class="subheading mb-5">Melbourne, Vic·  ·
             <a href="mailto:smitaaron1@gmail.com">smitaaron1@gmail.com</a>
           </div>
-          <p class="mb-5">Hey there, this is my portfolio where you can see what projects I have worked on. I am a programmer based in Melbourne, but originally from South Africa. I moved to Australia in my pursuit of becoming a professional game programmer and am loving my new home. I'm quiet yet highly passionate and enthusiastic about my field and am always pushing myself to improve and expand my skills.<br><br>I primarily program in C++ and C# with a focus on game developement as well as other topics which interest me such as procedural generation and template meta programming (yikes). I am always working on a personal project exploring new ideas or consolidating new and old skills.</p>
+          <p class="mb-5">Hey there, this is my portfolio where you can see what projects I have worked on. I am a programmer based in Melbourne, but originally from South Africa. I moved to Australia in my pursuit of becoming a professional game programmer and am loving my new home. I'm quiet yet highly passionate and enthusiastic about my field and am always pushing myself to improve and expand my skills.<br><br>I primarily program in C++ and C# with a focus on game developement as well as other topics which interest me such as procedural generation. I am always working on a personal project exploring new ideas or consolidating new and old skills.</p>
           <ul class="list-inline list-social-icons mb-0">
             <li class="list-inline-item">
               <a href="https://twitter.com/AaronDsmit" target = "_blank">
@@ -118,7 +118,7 @@
             <div class="resume-content mr-auto">
 			  <img width="600" height="500" class="img-fluid" src="img/PlunderSail.PNG" alt="">
               <h3 class="mb-0"><br>PlunderSail</h3>
-              <div class="subheading mb-3">Engine: Unity<br>Language: C#</div>
+              <div class="subheading mb-3">Engine: Unity<br>Language: C#<br><a href="https://github.com/weaponOD/Plundersail" target = "_black">GitHub repository</a></div>
               <p>This was my major game project for 2017 made in six weeks by a team of five people.</p>
 			  <button class="collapsible">More Info</button>
 			  <div class="content">
@@ -156,7 +156,7 @@
             <div class="resume-content mr-auto">
               <img width="600" height="500" class="img-fluid" src="img/PhysicsEngine.PNG" alt="">
               <h3 class="mb-0"><br>2D Physics Engine</h3>
-              <div class="subheading mb-3">FrameWork: AIE BOOTSTRAP<br>Language: C++</div>
+              <div class="subheading mb-3">FrameWork: AIE BOOTSTRAP<br>Language: C++<br><a href="https://github.com/AaronDSmit/PhysicsEngine" target = "_black">GitHub repository</a></div>
               <p>A physics engine built to simulate 2D physics using industry standard techniques.</p>
 			  <button class="collapsible">More Info</button>
 			  <div class="content">
@@ -186,6 +186,77 @@
 				<p>Before Training&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbspAfter Training</p>
 				<p>A demo simulation in which feed forward neural networks are represented by entities which can detect food infront of it with five raycasts seperated by 15 degrees with each raycast's output being the neural network's input and are awarded points for each 'food' consumed. 
 				Using my genetic algorithm library multiple generations of these entities are bread using their fitness, with each new generation having a higher sucess rate than the previous. The outcome is that hidden layer in the neural networks become tuned to solve the situation of hunting down food.</p>
+			  </div>
+            </div>
+          </div>
+		  
+		  <hr>
+		  
+		  <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+			  <img width="600" height="500" class="img-fluid" src="img/procgen.PNG" alt="">
+              <h3 class="mb-0"><br>Island Generation</h3>
+              <div class="subheading mb-3">Engine: Unity <br>Language: C#</div>
+              <p>Procedurally generated hexagon tile based map using cellular automata and several layers of customisation.</p>
+			  <button class="collapsible">More Info</button>
+			  <div class="content">
+			    <br>
+				<span class="icons"><img width="400" height="200" class="img-fluid" src="img/islands1.PNG" alt="">
+				</span>&nbsp;&nbsp;&nbsp;
+				<span class="icons"><img width="400" height="200" class="img-fluid" src="img/islands2.gif" alt="">
+				</span>
+				
+				<p>The goal of this project is to create maps for a turn based pirate/trading ship game, with this in mind the requirements are: 
+				<ul>
+				<li>large ocean areas for players to navigate.</li>
+				<li>Islands to add interest to an empty ocean and house trade ports.</li>
+				<li>Coastal focused land masses ranging from small to medium in size.</li>
+				<li>Have a hexagon based grid look less rigid and more natural.</li>
+				<li>Generate the map data separate to the visuals data.</li>
+				</ul>
+				
+				The is map generated in several steps:
+				<ol>
+				<li><a href="https://en.wikipedia.org/wiki/Cellular_automaton" target = "_black">cellular automata</a> to create initial clumps of land (landmasses) and water.</li>
+				<li><a href="https://en.wikipedia.org/wiki/Flood_fill" target = "_black">Flood fill</a> until each tile belongs to a landmass or body of water.</li>
+				<li>Remove all bodies of water below a specified size, I only want playable bodies of water not lakes.</li>
+				<li>Remove excess beach tiles that spand too far from landmasses.</li>
+				<li>Remove any land masses smaller than specified size, one tile islans aren't fun.</li>
+				<li>Finalise tiles to ensure they are the correct type.</li>
+				</ol>
+				
+				This is an ongoing project.
+				</p>
+			  </div>
+            </div>
+          </div>
+		  
+		  <hr>
+		  
+		   <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+			  <img width="600" height="500" class="img-fluid" src="img/EchoCommand.PNG" alt="">
+              <h3 class="mb-0"><br>ECHO COMMANDER</h3>
+              <div class="subheading mb-3">Engine: Unity <br>Language: C#</div>
+              <p>Echo Commander is top down 2D puzzle game developed during the 2018 Global Game Jam in Melbourne. We had 48 hours to create a game from scratch based on the theme "Transmission".</p>
+			  <button class="collapsible">More Info</button>
+			  <div class="content">
+			    <br>
+				<span class="icons"><img width="400" height="200" class="img-fluid" src="img/echoCommander.gif" alt="">
+				</span>
+				
+				<p><a href="https://globalgamejam.org/2018/games/echo-command"> Global GameJam page</a></p>
+				<p>Windows: <a href="https://ggj.s3.amazonaws.com/games/2018/01/196416/exec/Echo%20Command%201.4.zip">Download</a><br>Android APK: <a href="https://www.dropbox.com/s/aps85y8ka04e8hn/Echo%20Commander.apk?dl=0">Download</a></p>
+				
+				<p>The game has players solve puzzles by giving a robot a list of instructions which it passes on to any other robot it collides with.
+				<br>
+				I was responsible for: 
+				<ul>
+				<li>Timed cyclic movement for the robots, all active robots would move one block in unison.</li>
+				<li>UI: the player could enter commands with the arrow keys or by clicking the corresponding  button. Commands could be removed by clicking on them.</li>
+				<li>Robot interactions with the world, such as colliding with walls and passing over buttons and the console.</li>
+				</ul> 
+				</p>
 			  </div>
             </div>
           </div>
